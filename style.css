@@ -1,0 +1,312 @@
+h1{
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+#subtitle{
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#p1{
+    padding-bottom: 160px;
+    margin-top: 5px;
+    padding-right: 30%;
+}
+
+#p2{
+padding-bottom: 300px;
+padding-left: 30%;
+
+}
+
+body{
+    margin: 0px;
+}
+
+main{
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+}
+
+article{
+    margin:0px;
+    padding-left: 10px;
+}
+
+ol{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+     
+}
+
+li{
+    padding-bottom: 10px;
+    padding-top: 0px;
+    background-color: rgb(0, 0, 0);
+}
+
+.clickable{
+    color:whitesmoke;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;    
+}
+
+#list:link{
+    padding: 10px 15px;
+    background-color:rgb(0, 0, 0);
+    border: 1px solid transparent;
+}
+
+#list:hover{
+    color:black;
+    background-color: white;
+    border: 1px solid white;
+}
+
+img{
+    width: 500px;
+    height: auto;
+
+}
+
+#pic1{
+    float: left;
+    padding-right: 10px;
+}
+
+#pic2{
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#about{
+    text-align: right;
+    padding-right: 12px;
+}
+
+
+#menu{
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+.imgmenu{
+    width: 220px;
+    height: 270px;
+    object-fit:cover;
+    object-position: 25% 25% 25% 25%;
+    display:block;
+}
+
+.container{
+    position:relative ;
+    width: 220px;
+    height: 270px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(transparent, rgb(0, 0, 0, 0.5));
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 50%;
+}
+
+.txt1 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container-center{
+    display: flex;
+    justify-content: center;
+}
+
+span{
+    font-size: 20px;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+#hubungi{
+    padding-bottom: 0px;
+}
+
+#logo{
+width: 60px;
+height: auto;
+float: left;
+
+}
+
+a{
+text-decoration: none;
+color: black;
+display:flex;
+align-items: center;
+width: 180px;
+padding-top: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+
+h2{text-align: center;
+}
+#pic1{
+    float: none;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pic2{
+    float: none;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ol{
+    list-style-type: none;
+    display:flexbox;
+    justify-content:center;
+    padding-left: 0px;
+     
+}
+
+#list:link{
+    padding: 10px 37px;
+    background-color:rgb(0, 0, 0);
+    border: 1px solid transparent;
+    width: 50px;
+
+}
+
+
+li{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.container-center{
+    display: inline-flex;
+}
+#menu{
+    margin-top: 0px;
+    text-align: center;
+}
+
+#p1{
+    padding-bottom: 160px;
+    text-align: justify;
+    padding-right: 0%;
+    width: 435px;
+    padding-left: 10px;
+}
+
+#p2{
+padding-bottom: 0px;
+padding-left: 0%;
+text-align: justify;
+padding-right: 30px;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .imgmenu{
+        width: 190px;
+        height: 250px;
+        object-fit:cover;
+        object-position: 25% 25% 25% 25%;
+        display:block;
+    }
+    
+    .container{
+        position:relative ;
+        width: 190px;
+        height: 250px;
+        float: left;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    #p1{
+        padding-bottom: 0px;
+        margin-top: 5px;
+        padding-right: 0%;
+    }
+    
+    #p2{
+    padding-bottom: 150px;
+    padding-left: 0%;
+    
+    }
+
+
+
+
+
+
+
+}
